@@ -1,11 +1,12 @@
 # shellCommands
 Shell command list
 
-💧**[man]**💧
+💧[**man**]💧
 
 Pour obtenir le manuel d'une commande :  
 `man COMMANDE `
 
+  
 
 💧[**pwd**]💧
 
@@ -13,7 +14,8 @@ Pour savoir ou on se trouve a tout instant :
 `pwd`
 
 
-**[cd]**
+
+💧[**cd**]💧
 
 Pour changer de dossier (se deplacer) :  
 `cd DIRECTORY`
@@ -28,6 +30,7 @@ D'autres facons d'utiliser cd :
 
     Aller dans la home (~) :  
     `cd`
+
 
 
 **[ls]**
