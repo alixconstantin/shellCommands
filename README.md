@@ -189,7 +189,7 @@ su
 [sudo]
 
 Pour lancer une seule commande en tant que root :
-sudo COMMANDE
+    sudo COMMANDE
 (comme super user do)
 
 
