@@ -1,13 +1,13 @@
 # shellCommands
 Shell command list
 
-[color=#269db2]man[/color]
+💧**[man]**💧
 
 Pour obtenir le manuel d'une commande :  
 `man COMMANDE `
 
 
-[<span style="color:#269DB2">pwd</span>]
+💧[**pwd**]💧
 
 Pour savoir ou on se trouve a tout instant :  
 `pwd`
@@ -212,17 +212,17 @@ afficher du texte ou la valeur d'une ou plusieurs variables sur la sortie standa
  1. Afficher du texte :  
 `echo "Hello World"`
 
-2. Afficher la valeur d'une variable :  
+1. Afficher la valeur d'une variable :  
 `name="John"`
 `echo "My name is $name"`
 
-3. Afficher sans retour à la ligne :  
+1. Afficher sans retour à la ligne :  
 `echo -n "Hello"`
 
-4. Afficher du texte sur la sortie d'erreur standard :  
+1. Afficher du texte sur la sortie d'erreur standard :  
 `echo "Error message" >&2`
 
-5. Répéter le texte plusieurs fois :  
+1. Répéter le texte plusieurs fois :  
 `echo "Hello" && echo "Hello" && echo "Hello"`
 
 
