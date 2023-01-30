@@ -3,21 +3,21 @@ Shell command list
 
 💧[**man**]💧
 
-Pour obtenir le manuel d'une commande :  
+Pour obtenir le **manuel** d'une commande :  
 `man COMMANDE `
 
   
   
 💧[**pwd**]💧
 
-Pour savoir ou on se trouve a tout instant :  
+Pour savoir **ou on se trouve** a tout instant :  
 `pwd`
 
 
 
 💧[**cd**]💧
 
-Pour changer de dossier (se deplacer) :  
+Pour changer de dossier (**se deplacer**) :  
 `cd DIRECTORY`
 
 D'autres facons d'utiliser cd :  
@@ -33,21 +33,21 @@ D'autres facons d'utiliser cd :
 
 
 
-**[ls]**
+💧[**ls**]💧
 
-Lister le contenu d'un dossier :  
+**Lister le contenu** d'un dossier :  
 `ls DIRECTORY`
 
-Pour le contenu du dossier dans lequel je suis :  
+Pour le contenu du dossier **dans lequel je suis** :  
 `ls`
 
-Pour avoir des details sur les fichiers (date, droits, a qui ils appartiennent, taille) :  
+Pour avoir des **details** sur les fichiers (date, droits, a qui ils appartiennent, taille) :  
 `ls -l`
 
-Pour voir aussi les fichiers et dossiers caches (qui ont un nom commencant par un ".") :  
+Pour voir aussi les **fichiers et dossiers cachés** (qui ont un nom commencant par un ".") :  
 `ls -a`
 
-On peut combiner les options :  
+On peut **combiner** les options :  
 `ls -l -a`
 `ls -la`
 
