@@ -52,56 +52,56 @@ On peut **combiner** les options :
 `ls -la`
 
 
-💧**[mkdir]**💧
+💧[**mkdir**]💧
 
 Creer un dossier :  
 `mkdir NOM_DOSSIER`
 
 
-**[touch]**
+💧[**touch**]💧
 
 Creer un fichier :  
 `touch NOM_FICHIER`
 
 
-**[cat]**
+💧[**cat**]💧
 
 Affiche le contenu d'un fichier :  
 `cat NOM_FICHIER`
 
 
-**[cat] -e**
+💧[**cat**] -e💧
 
 Affiche les caractères non affichable
 par exemple le "$" qui indique les retours a la ligne 
 
 
-**[cp]**
+💧[**cp**]💧
 
 Copier-Coller :  
-`cp FICHIER NOUVEAU_FICHIER`
+`cp FICHIER NOUVEAU_CHEMIN`
 
 
-**[mv]**
+💧[**mv**]💧
 
 Deplacer, renommer :  
 `mv ANCIEN_CHEMIN NOUVEAU_CHEMIN`
 `mv ANCIEN_NOM NOUVEAU_NOM`
 
 
-**[rm]**
+💧[**rm**]💧
 
 Supprimer un fichier :  
 `rm FICHIER`
 
 
-**[rmdir]**
+💧[**rmdir**]💧
 
 Supprimer un dossier (s'il est vide) :  
 rmdir DOSSIER
 
 
-**[rm]** -r
+💧[**rm**] -r💧
 
 Supprimer recursivement (dossiers, sous-dossiers, fichiers, etc) :  
 `rm -r DOSSIER`
@@ -156,16 +156,16 @@ Droits tout le monde = r-- = 4 + 0 + 0 = 4
 On met un 0 devant pour indiquer que c'est de l'octal (base 8).  
 
 
-**[chmod]**
+💧[**chmod**]💧
 
-Pour changer les droits d'un fichier :  
+Pour **changer les droits** d'un fichier :  
 `chmod DROITS FICHIER`  
 En remplacant DROITS par le code calcule comme precedemment.
 
 
-**[chown]**
+💧[**chown**]💧
 
-Pour changer le proprietaire d'un fichier :  
+Pour **changer le proprietaire** d'un fichier :  
 `chown NOUVEAU_PROPRIETAIRE:GROUPE FICHIER`    
 (:GROUPE est facultatif)  
 
@@ -181,55 +181,55 @@ Cet utilisateur s'appelle le root.
 C'est assez dangereux d'utiliser son ordinateur en tant que root, donc on le fait que quand on doit faire des actions tres particulieres.
   
   
-**[su]**
+💧[**su**]💧
 
-Pour obtenir un shell en tant que root :  
+Pour obtenir un **shell en tant que root** :  
 `su`  
 (comme super user)
 
 
-**[sudo]**
+💧[**sudo**]💧
 
-Pour lancer une seule commande en tant que root :  
+Pour lancer **une seule commande en tant que root** :  
     `sudo COMMANDE`  
 (comme super user do)
 
 
-**[su]**
+💧[**su**]💧
 
 Pour se connecter en tant qu'un autre utilisateur (pas forcement le root) :  
 `su NOM_USER`
 
 
-**[gcc]**
+💧[**gcc**]💧
 
-Pour compiler un fichier C et pouvoir l'executer :  
+Pour **compiler un fichier C** et pouvoir l'executer :  
 `gcc nom_du_fichier.c -o nom_de_l_executable`  
 exécuter ce fichier en tapant `"./nom_de_l_executable".`  
 
 
-**[echo]**
+💧[**echo**]💧
 
 afficher du texte ou la valeur d'une ou plusieurs variables sur la sortie standard, souvent   utilisé pour afficher des messages pour l'utilisateur, pour afficher les valeurs de certaines   variables, pour construire des scripts de commandes, etc.  
 
- 1. Afficher du texte :  
+  **Afficher du texte** :  
 `echo "Hello World"`
 
-1. Afficher la valeur d'une variable :  
+  **Afficher la valeur d'une variable** :  
 `name="John"`
 `echo "My name is $name"`
 
-1. Afficher sans retour à la ligne :  
+ **Afficher sans retour à la ligne** :  
 `echo -n "Hello"`
 
-1. Afficher du texte sur la sortie d'erreur standard :  
+ **Afficher du texte sur la sortie d'erreur standard** :  
 `echo "Error message" >&2`
 
-1. Répéter le texte plusieurs fois :  
+1. **Répéter le texte plusieurs fois** :  
 `echo "Hello" && echo "Hello" && echo "Hello"`
 
 
-**[less]**
+💧[**less**]💧
 
  visualisation de fichiers en mode texte en ligne de commande. Les deux permettent d'afficher le  contenu d'un fichier par pages, de sorte que l'utilisateur ne soit pas submergé par une quantité excessive de texte sur l'écran :  
 
@@ -238,36 +238,36 @@ afficher du texte ou la valeur d'une ou plusieurs variables sur la sortie standa
 possibilité également de chercher en utilisant le / 
 
 
-**[head]**
+💧[**head**]💧
 
-Affiche les 10 premières lignes d'un fichier :  
+Affiche les **10 premières lignes** d'un fichier :  
 `head FICHIER`
 
-pour les 3 premières ligne par exemple :  
+pour les **3 premières ligne** par exemple :  
 `head -n 3 FICHIER`
 
 
-**[tail]**
+💧[**tail**]💧
 
-Affiche les 10 dernières ligne d'un fichier  :  
+Affiche les **10 dernières ligne** d'un fichier  :  
 `tail FICHIER`
 
-pour les 3 dernières ligne par exemple :  
+pour les **3 dernières ligne** par exemple :  
 `tail -n 3 FICHIER`
 
 
-**[grep]**
+💧[**grep**]💧
 
-permet de filtrer le contenu des fichiers et de n'afficher que les lignes contenant le texte spécifié :  
+permet de **filtrer le contenu** des fichiers et de **n'afficher que les lignes contenant** le texte spécifié :  
 `grep "mot" FICHIER`
 
-pour rechercher du texte dans plusieurs fichiers en spécifiant plusieurs noms de fichiers :  
+pour **rechercher** du texte dans **plusieurs fichiers** en spécifiant plusieurs noms de fichiers :  
 `grep "motif" FICHIER_1 FICHIER_2`
 
-retirer toutes les lignes qui contienne le mot :  
+**retirer toutes les lignes qui contienne le mot** :  
 `grep "mot" -v  FICHIER`
 
-filtre sans tenir compte des minuscules/majuscules :   
+filtre **sans tenir compte des minuscules/majuscules** :   
 `grep "mot" -i FICHIER`
 
 ETC. 
