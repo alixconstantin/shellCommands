@@ -7,7 +7,7 @@ Pour obtenir le manuel d'une commande :
 `man COMMANDE `
 
 
-[<span style="color:#269db2">pwd</span>]
+[<span style="color:#269DB2">pwd</span>]
 
 Pour savoir ou on se trouve a tout instant :  
 `pwd`
