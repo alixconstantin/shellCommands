@@ -4,13 +4,13 @@ Shell command list
 [man]
 
 Pour obtenir le manuel d'une commande :
-man COMMANDE 
+    man COMMANDE 
 
 
 [pwd]
 
 Pour savoir ou on se trouve a tout instant :
-pwd
+    pwd
 
 
 [cd]
