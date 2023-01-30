@@ -1,36 +1,36 @@
 # shellCommands
 Shell command list
 
-[man]
+**[man]**
 
 Pour obtenir le manuel d'une commande :
 `man COMMANDE `
 
 
-[pwd]
+**[pwd]**
 
 Pour savoir ou on se trouve a tout instant :
 `pwd`
 
 
-[cd]
+**[cd]**
 
 Pour changer de dossier (se deplacer) :
 `cd DIRECTORY`
 
-    D'autres facons d'utiliser cd :
+D'autres facons d'utiliser cd :
 
     Revenir au dossier que l'on vient de quitter :
-    cd -
+    `cd -`
 
     Aller au dossier parent :
-    cd ..
+    `cd ..`
 
     Aller dans la home (~) :
-    cd
+    `cd`
 
 
-[ls]
+**[ls]**
 
 Lister le contenu d'un dossier :
 `ls DIRECTORY`
@@ -49,59 +49,59 @@ On peut combiner les options :
 `ls -la`
 
 
-[mkdir]
+**[mkdir]**
 
 Creer un dossier :
-mkdir NOM_DOSSIER
+`mkdir NOM_DOSSIER`
 
 
-[touch]
+**[touch]**
 
 Creer un fichier :
-touch NOM_FICHIER
+`touch NOM_FICHIER`
 
 
-[cat]
+**[cat]**
 
 Affiche le contenu d'un fichier :
-cat NOM_FICHIER
+`cat NOM_FICHIER`
 
 
-[cat] -e
+**[cat] -e**
 
 Affiche les caractères non affichable
 par exemple le "$" qui indique les retours a la ligne 
 
 
-[cp]
+**[cp]**
 
 Copier-Coller :
-cp FICHIER NOUVEAU_FICHIER
+`cp FICHIER NOUVEAU_FICHIER`
 
 
-[mv]
+**[mv]**
 
 Deplacer, renommer :
-mv ANCIEN_CHEMIN NOUVEAU_CHEMIN
-mv ANCIEN_NOM NOUVEAU_NOM
+`mv ANCIEN_CHEMIN NOUVEAU_CHEMIN`
+`mv ANCIEN_NOM NOUVEAU_NOM`
 
 
-[rm]
+**[rm]**
 
 Supprimer un fichier :
-rm FICHIER
+`rm FICHIER`
 
 
-[rmdir]
+**[rmdir]**
 
 Supprimer un dossier (s'il est vide) :
 rmdir DOSSIER
 
 
-[rm] -r
+**[rm]** -r
 
 Supprimer recursivement (dossiers, sous-dossiers, fichiers, etc) :
-rm -r DOSSIER
+`rm -r DOSSIER`
 
 Gestions d'utilisateurs / Droits
 Les fichiers/dossiers appartiennent a des utilisateurs, sur Linux.
