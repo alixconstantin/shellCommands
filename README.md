@@ -1,7 +1,7 @@
 # shellCommands
 Shell command list
 
-**[man]**
+**[[color=#269db2]man[/color]]**
 
 Pour obtenir le manuel d'une commande :  
 `man COMMANDE `
