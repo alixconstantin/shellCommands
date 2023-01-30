@@ -4,19 +4,19 @@ Shell command list
 [man]
 
 Pour obtenir le manuel d'une commande :
-    man COMMANDE 
+`man COMMANDE `
 
 
 [pwd]
 
 Pour savoir ou on se trouve a tout instant :
-    pwd
+`pwd`
 
 
 [cd]
 
 Pour changer de dossier (se deplacer) :
-cd DIRECTORY
+`cd DIRECTORY`
 
     D'autres facons d'utiliser cd :
 
@@ -33,20 +33,20 @@ cd DIRECTORY
 [ls]
 
 Lister le contenu d'un dossier :
-ls DIRECTORY
+`ls DIRECTORY`
 
 Pour le contenu du dossier dans lequel je suis :
-ls
+`ls`
 
 Pour avoir des details sur les fichiers (date, droits, a qui ils appartiennent, taille) :
-ls -l
+`ls -l`
 
 Pour voir aussi les fichiers et dossiers caches (qui ont un nom commencant par un ".") :
-ls -a
+`ls -a`
 
 On peut combiner les options :
-ls -l -a
-ls -la
+`ls -l -a`
+`ls -la`
 
 
 [mkdir]
