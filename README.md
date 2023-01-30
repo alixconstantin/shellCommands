@@ -52,7 +52,7 @@ On peut **combiner** les options :
 `ls -la`
 
 
-**[mkdir]**
+💧**[mkdir]**💧
 
 Creer un dossier :  
 `mkdir NOM_DOSSIER`
