@@ -372,3 +372,58 @@ Supprimer un caractère spécifique :
 
 Il existe de nombreuses options et fonctionnalités plus avancées, telles que la modification de plusieurs caractères à la fois,   
 la gestion de regex, etc.
+
+💧[**file**]💧
+
+permet de déterminer le type d'un fichier en ligne de commande.   
+Il analyse le contenu d'un fichier et affiche une description de ce que le fichier est, par exemple :   
+un fichier texte, une image JPEG, un fichier de script shell, etc.
+
+`file file.txt`
+
+💧[**ifconfig**]💧
+
+pour configurer les interfaces réseau sur un système d'exploitation.  
+Il est utilisé pour afficher la configuration actuelle d'une interface réseau, pour la configurer avec une nouvelle adresse IP,  
+pour activer ou désactiver une interface, etc.  
+
+`ifconfig`
+
+💧[**bc**]💧
+
+C'est une calculatrice
+Elle permet notamment avec le | d'effectuer des calculs en lisant sur l'entrée standard 
+
+`echo " 1 + 2 " | bc`
+
+💧[**find**]💧
+
+permet de rechercher des fichiers et des répertoires sur votre système.  
+Elle peut être utilisée pour trouver des fichiers en fonction de critères tels que le nom, la date de modification, la taille, etc.  
+
+`find .` donne le nom de tout les fichiers du dossier et sous-dossier
+
+un exemple simple d'utilisation de la commande find pour trouver tous les fichiers dans le répertoire courant et ses sous-répertoires  
+qui se terminent par ".txt" :  
+
+`find . -name "*.txt"`  
+
+. représente le répertoire courant  
+-name "*.txt" indique à find de rechercher les fichiers qui se terminent par ".txt"  
+
+pour effectuer des opérations sur les fichiers trouvés, comme par exemple les supprimer :  
+
+`find . -name "*.bak" -delete`
+
+💧[**env**]💧
+
+Permet de voir les variables d'environnements qui sont stocker et disponible dans le shell :  
+`env`  
+Pratique pour paramétrer ses scripts Shells et faire des makeFiles ! :) 
+
+Pour afficher une valeur stocker dans le ENV :  
+`echo $VARIABLE`
+
+Pour ajouter une variable dans le ENV :  
+`export VARIABLE_NAME = VARIABLE_VALUE`
+
