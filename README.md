@@ -270,5 +270,5 @@ pour **rechercher** du texte dans **plusieurs fichiers** en spécifiant plusieur
 filtre **sans tenir compte des minuscules/majuscules** :   
 `grep "mot" -i FICHIER`
 
-LES REDIRECTIONS 
+LES REDIRECTIONS et CHAINAGE
 
