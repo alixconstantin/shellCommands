@@ -270,5 +270,105 @@ pour **rechercher** du texte dans **plusieurs fichiers** en spécifiant plusieur
 filtre **sans tenir compte des minuscules/majuscules** :   
 `grep "mot" -i FICHIER`
 
-LES REDIRECTIONS et CHAINAGE
 
+LES REDIRECTIONS & CHAINAGE DE COMMANDE 
+
+La plupart des commandes jusqu'a maintenant étaient unitaires, le fait de chainer des commandes permet de combiners plusieurs commandes pour obtenir des actions beaucoup plus spécifique
+
+💧[**>**]💧
+
+Redirige la sortie standard (stdout) vers un fichier:  
+`command > output.txt`   
+`echo "bonjour" > output.txt`   
+Créer un fichier output avec écrit bonjours dedans   
+Si la commande est répéter a l'identique avec `>` la sortie suivante écrase la précédente  
+
+Rediriger l'entrée standard (stdin) à partir d'un fichier:  
+`command < input.txt`  
+`cat < file.txt`   
+
+Rediriger les erreurs standard (stderr) vers un fichier: 
+`command 2> error.txt`
+
+💧[**>>**]💧  
+
+C'est la même chose que `>` sauf qu'au lieu de remplacer elle s'ajoute a la sortie de la commande à la fin d'un fichier existant   
+`bonjour2 >> outpux.text`  
+  
+💧[**|**]💧  
+
+La syntaxe "|" permet de rediriger la sortie d'une commande vers l'entrée d'une autre commande  afin d'enchainer plusieurs commandes pour une action plus précise, il n'y a pas de limite au   nombre de `|`
+
+Filtrer les lignes d'un fichier qui contiennent un certain mot:  
+`cat file.txt | grep "mot"`    
+
+Filtrer les lignes d'un fichier qui contiennent un certain mot et n'obtenir que la première ligne :  
+`cat file.txt | grep "mot" | head -n 1` 
+
+Afficher le nombre de lignes d'un fichier:  
+`$ cat file.txt | wc -l`  
+bonus(💧**wc**💧) il affiche le  nombre de -l ( ligne ) -w ( mots ) - c ( caractères )
+
+💧[**sort**]💧 & 💧[**cut**]💧  
+
+sort permet de **trier les lignes** d'un fichier ou de l'entrée standard.  
+
+cut permet de de **couper des colonnes** (ou des champs) dans un fichier ou dans l'entrée standard  
+cut utilise un séparateur de champ (généralement un espace ou une tabulation) pour déterminer où couper les champs.
+
+pour trier un texte par ordre alphabétique :  
+`sort file.txt`
+
+Pour trier les nombres : 
+`sort -n file.txt`  
+
+( - r permet de trier dans l'ordre inverse )
+
+Pour cut avec l'exemple :  
+`$ cat file.txt`  
+` foo bar baz` 
+` abc def ghi `
+
+La commande `cut -d " " -f 2 file.txt ` renverrait le résultat de la 2 iem colone :
+`bar`  
+`def`
+le -d spécifique **ce qui sépare les colones** ( ici un espace, mais ca pourrait être une "," etc.)   
+le -f la/les colone(s) selectionné
+
+Il est possible également de faire des modifications sur ces selections précises avec la commande suivante : 
+
+💧[**sed**]💧
+
+outil puissant pour la modification de fichiers texte en ligne de commande  
+Il peut être utilisé pour effectuer des opérations telles que la recherche et le remplacement de texte  
+l'insertion de texte, la suppression de lignes, etc.    
+
+Remplacer un texte dans un fichier :  
+`sed 's/old-text/new-text/g' file.txt`  
+`cat file.txt | sort | cut -d , -f 1 | sed "s/thomas/Thomas"`
+
+Supprimer des lignes contenant un texte spécifique :  
+`sed '/text-to-delete/d' file.txt`  
+
+Insérer une ligne avant une ligne contenant un texte spécifique (...) :  
+`$ sed '/text-to-search-for/i\new-line-of-text' file.txt`  
+
+Ces exemples ne sont que la pointe de l'iceberg de ce que sed peut faire. Il existe de nombreuses options et fonctionnalités plus avancées, telles que la    modification de plusieurs lignes à la fois, la gestion de regex, etc.  
+
+
+💧[**tr**]💧
+
+Il est utilisé pour effectuer des opérations de traduction sur des caractères en ligne de commande. Il peut être utilisé pour convertir des minuscules en     majuscules, remplacer des caractères spécifiques par d'autres, supprimer des caractères indésirables, etc.  
+
+Remplacer un caractère par un autre :  
+`tr 'a' 'A' < file.txt`  
+
+Convertir des minuscules en majuscules :  
+`tr '[:lower:]' '[:upper:]' < file.txt`
+
+Supprimer un caractère spécifique : 
+`tr -d '\n' < file.txt`  
+( ici on supprime tout les retours a la ligne dans file.txt )  
+
+Il existe de nombreuses options et fonctionnalités plus avancées, telles que la modification de plusieurs caractères à la fois,   
+la gestion de regex, etc.
