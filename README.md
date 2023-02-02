@@ -153,16 +153,16 @@ Droits user = rwx = 4 + 2 + 1 = 7
 Droits groupe = rw- = 4 + 2 + 0 = 6  
 Droits tout le monde = r-- = 4 + 0 + 0 = 4  
 ---> Les droits se ce fichier sont donc : 0764.  
-On met un 0 devant pour indiquer que c'est de l'octal (base 8).  
-
-0 : ---
-1 : --x
-2 : -w-
-3 : -wx
-4 : r--
-5 : r-x
-6 : rw-
-7 : rwx
+On met un 0 devant pour indiquer que c'est de l'octal (base 8).   
+  
+0 : ---  
+1 : --x  
+2 : -w-  
+3 : -wx  
+4 : r--  
+5 : r-x  
+6 : rw-  
+7 : rwx  
 
 lrwxrwxrwx
 l est un symlink, un type spécial de fichier dont la fonction est de créer un lien vers un autre fichier, qui peut être de n'importe quel type  
