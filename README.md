@@ -164,6 +164,15 @@ On met un 0 devant pour indiquer que c'est de l'octal (base 8).
 6 : rw-
 7 : rwx
 
+lrwxrwxrwx
+l est un symlink, un type spécial de fichier dont la fonction est de créer un lien vers un autre fichier, qui peut être de n'importe quel type  
+La lecture ou l'écriture dans un lien symbolique accédera le fichier qu'il représente. Cela donne l'impression que le lien symbolique n'a pas de contenu   propre, mais en réalité il contient le texte du chemin d'accès au fichier auquel il est lié.  
+Un lien symbolique ne dépend pas du fichier cible et continue d'exister même si la cible est déplacée ou supprimée.  
+  
+la commande est : `ln -s source destination`
+
+/!/ Pour modifier uniquement que les permissions du lien symbolique sans affecter les permissions du lien cible il faut faire rajouter -h : 
+`chmod -h 777 fichier`  
 
 💧[**chmod**]💧
 
