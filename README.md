@@ -146,7 +146,7 @@ Pour changer les droits d'un fichier, il faut faire un peu de calcul :
 r = 4  
 w = 2  
 x = 1  
-(C'est exprime en octal, mais on s'en fout pour l'instant).  
+(C'est exprime en octal).  
 Prenons un fichier au hasard qui aurait les droits suivant :  
 -rwxrw-r--  
 Droits user = rwx = 4 + 2 + 1 = 7  
@@ -154,6 +154,15 @@ Droits groupe = rw- = 4 + 2 + 0 = 6
 Droits tout le monde = r-- = 4 + 0 + 0 = 4  
 ---> Les droits se ce fichier sont donc : 0764.  
 On met un 0 devant pour indiquer que c'est de l'octal (base 8).  
+
+0 : ---
+1 : --x
+2 : -w-
+3 : -wx
+4 : r--
+5 : r-x
+6 : rw-
+7 : rwx
 
 
 💧[**chmod**]💧
@@ -427,3 +436,5 @@ Pour afficher une valeur stocker dans le ENV :
 Pour ajouter une variable dans le ENV :  
 `export VARIABLE_NAME = VARIABLE_VALUE`
 
+
+*********
