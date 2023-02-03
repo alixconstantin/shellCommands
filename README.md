@@ -443,7 +443,12 @@ Pour afficher une valeur stocker dans le ENV :
 `echo $VARIABLE`
 
 Pour ajouter une variable dans le ENV :  
-`export VARIABLE_NAME = VARIABLE_VALUE`
+`export VARIABLE_NAME = VARIABLE_VALUE`  
 
 
-*********
+💧[**ssh-keygen**]💧
+
+Commande qui permet de générer des paires de clés publique/privée pour l'authentification SSH. Cette commande peut être utilisée pour générer des clés RSA,   DSA, ECDSA, Ed25519, etc.  
+Voici un exemple de comment utiliser ssh-keygen pour générer une paire de clés RSA de 2048 bits :  
+`ssh-keygen -t rsa -b 2048`   
+-t précise le type et -b ( optionnel ) le nombre de bits.  
