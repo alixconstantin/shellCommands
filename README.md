@@ -51,6 +51,11 @@ On peut **combiner** les options :
 `ls -l -a`
 `ls -la`
 
+Pour que les répertoires soient suivis d’un caractère slash : 
+`ls -p`
+
+
+
 
 💧[**mkdir**]💧
 
