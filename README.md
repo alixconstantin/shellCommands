@@ -51,10 +51,17 @@ On peut **combiner** les options :
 `ls -l -a`
 `ls -la`
 
-Pour que les répertoires soient suivis d’un caractère slash : 
+Pour que les répertoires soient suivis d’un caractère slash :   
 `ls -p`
 
+*Liste les fichiers et répertoires dans l'ordre dans lequel ils sont stockés sur le système de fichiers, sans faire de tri ou de modification de l'ordre d'affichage.:  
+`ls -U`
 
+Afficher les noms de fichiers séparés par des virgules au lieu de les afficher sur une nouvelle ligne :  
+`ls -m`
+
+Trier les entrées par date de modification : 
+`ls -t`
 
 
 💧[**mkdir**]💧
